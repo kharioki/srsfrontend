@@ -1,6 +1,6 @@
 html {
 	height:100%;
-    background:center no-repeat fixed url('/assets/example/bg_suburb.jpg');
+    background:center no-repeat fixed url('./public/Assets/css/images/Growth.jpg');
     background-size: cover;
 }
 body {
@@ -333,7 +333,7 @@ a.list-group-item.active,[class*='-info'] {
 }
 
 #section2 {
-	background-color: #e5e5ef;
+	background-color: #279ddd;
     color:#686868;
 }
 
@@ -343,12 +343,13 @@ a.list-group-item.active,[class*='-info'] {
 }
 
 #section4 {
-	background-color: #fff;
+  ackground-color: #fff;
+  /*background-image: url("./images/seed2.jpg");*/
     color:#444;
 }
 
 #section5,#section7,#section7 a {
-    color:#f5f5f5;
+    color:#444;
 }
 
 #section6 {

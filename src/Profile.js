@@ -7,6 +7,7 @@ import Savings from './Pages/Savings';
 import Occupation from './Pages/Occupation';
 import SideMenu from './Pages/SideMenu';
 import UserInfo from './Pages/UserInfo';
+import GuarantorCard from './Pages/GuarantorCard';
 import './App.css';
 
 class Profile extends Component {
@@ -18,6 +19,7 @@ class Profile extends Component {
       expenditure:[],
       savings:[],
       employment:[],
+      guarantor:[],
       user:{}
 
     }
@@ -78,17 +80,17 @@ class Profile extends Component {
 	// 	}
 
   getUserinfo(){
-    var token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE0ODk5MzMxOTl9.K-Sga8f_oH5Zp72eS1UqA_gu2SS4QJOWRdbfDgORQQ0";
+    var token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE0OTAwMjQ4NTZ9.erfRgSBHy7ZHJbf0lVDswZKWk-4u_JmI-KArp60ZYSw";
       //console.log("token chat", token);
     $.ajax({
-      url: 'https://sheltered-eyrie-12048.herokuapp.com/api/v1/users/3.json',
+      url: 'https://sheltered-eyrie-12048.herokuapp.com/api/v1/users/2.json',
       beforeSend: function (xhr) {
         xhr.setRequestHeader ("Authorization", token);
       },
       dataType: 'json',
       cache: false,
       success: function(data){
-        this.setState({user: data, savings:data.savings, employment:data.employment, loading:false},function(){
+        this.setState({user: data, savings:data.savings, employment:data.employment, guarantor:data.guarantor, loading:false},function(){
           console.log("Tony");
           console.log(this.state);
         });
@@ -101,7 +103,7 @@ class Profile extends Component {
   }
 
   getExpenditure(){
-    var token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE0ODk5MzMxOTl9.K-Sga8f_oH5Zp72eS1UqA_gu2SS4QJOWRdbfDgORQQ0";
+    var token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE0OTAwMjQ4NTZ9.erfRgSBHy7ZHJbf0lVDswZKWk-4u_JmI-KArp60ZYSw";
       //console.log("token chat", token);
     $.ajax({
       url: 'https://sheltered-eyrie-12048.herokuapp.com/api/v1/expenditures.json',
@@ -167,6 +169,8 @@ class Profile extends Component {
            <Savings savings={this.state.savings}/>
           </div>
           <div className="col-md-4">
+          <SideMenu />
+          <GuarantorCard guarantor={this.state.guarantor}/>
 
           </div>
         </div>

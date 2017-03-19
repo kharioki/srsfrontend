@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ExpenseItem from './ExpenseItem';
 import {Link} from 'react-router';
+import ExpensePopup from './ExpensePopup';
 
 class ExpenseCard extends Component {
   constructor()

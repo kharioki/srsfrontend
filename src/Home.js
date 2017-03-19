@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import Sections from './Components/Sections';
-import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
 
 class Home extends Component {
   render() {
     return (
       <div className="Home">
+        <Navbar />
         <Sections />
-
       </div>
     );
   }
