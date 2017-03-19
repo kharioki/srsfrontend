@@ -14,8 +14,8 @@ class GuarantorPopup extends Component {
 
     }
 
-    handleGuarantor(e){
-           e.preventDefault();
+    handleGuarantor(data){
+          //  e.preventDefault();
 
             var data = {"fullname":" ", "business":" ", "annual_income": " "};
 

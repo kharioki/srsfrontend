@@ -8,6 +8,7 @@ import Occupation from './Pages/Occupation';
 import SideMenu from './Pages/SideMenu';
 import UserInfo from './Pages/UserInfo';
 import GuarantorCard from './Pages/GuarantorCard';
+import GuarantorPopup from './Pages/GuarantorPopup';
 import './App.css';
 
 class Profile extends Component {

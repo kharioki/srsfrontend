@@ -12,8 +12,10 @@ class GuarantorCard extends Component {
   });
     return (
       <div className="panel panel-default">
-        <div className="panel-heading"><button  onClick={GuarantorPopup} className="pull-right">Add</button>
-         <h4>Guarantors</h4></div>
+        <div className="panel-heading">
+          <button  onClick={GuarantorPopup} className="pull-right">Add</button>
+         <h4>Guarantors</h4>
+       </div>
           <div className="panel-body">
             <div className="list-group">
               {guarantors}

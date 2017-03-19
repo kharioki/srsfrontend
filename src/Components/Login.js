@@ -19,8 +19,7 @@ class Login extends Component {
     {
 
         return axios.post('/user', {
-            firstName: 'Fred',
-            lastName: 'Flintstone'
+            email: 'ayo@gmail.com'
                 })
             .then(function (response) {
             console.log(response);
@@ -36,8 +35,8 @@ class Login extends Component {
     {
         e.preventDefault();
 
-        return axios.post('https://shielded-inlet-71502.herokuapp.com/api/v1/authenticate',
-        {"email":"emmanuel@yahoo.com", "password":"emmanuel@yahoo.com"},
+        return axios.post('https://sheltered-eyrie-12048.herokuapp.com/api/v1/authenticate',
+        {"email":"ayo@gmail.com", "password":"ayo@gmail.com"},
         { headers: {"Accept": "application/json; charset=utf-8",
                     "Content-Type":"application/json; charset=utf-8"}}
                 )
@@ -46,7 +45,7 @@ class Login extends Component {
             console.log(response.data.auth_token);
               //this.context.router.replace('/app');
               //this.context.history.pushState(null, '/app');
-              browserHistory.push('/app?tk='+response.data.auth_token);
+              browserHistory.push('/app'+response.data.auth_token);
             })
             .catch(function (error) {
             console.log(error);
@@ -64,7 +63,7 @@ class Login extends Component {
       $.ajax({
 
         type: 'POST',
-        url: 'https://shielded-inlet-71502.herokuapp.com/api/v1/authenticate',
+        url: 'https://sheltered-eyrie-12048.herokuapp.com/api/v1/authenticate',
 
         dataType: 'json',
         cache: true,

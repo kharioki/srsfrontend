@@ -51,7 +51,7 @@ class Sections extends Component {
             <div className="col-sm-8 col-sm-offset-2">
               <h4 className="text-center">Build your credit score by telling us more.</h4>
               <h5 className="text-center">Fast forward your credit score with guarantors.</h5>
-            <img src="./public/Assets/css/images/seed.jpg" className="img-responsive center-block "  alt=""/>
+            <img src="/public/Assets/css/images/seed.JPG" className="img-responsive center-block "  alt=""/>
 
             </div>
           </div>
@@ -61,11 +61,14 @@ class Sections extends Component {
       	<h2 className="text-center">Don't worry, Your information is safe</h2>
         <div className="row">
           <div className="col-md-6 col-sm-6">
-            <img src="/assets/example/bg_iphone.png" className="img-responsive center-block " alt="" />
+            <img src="./public/Assets/css/images/infosec.PNG" className="img-responsive center-block " alt="" />
           </div>
           <div className="col-md-6 col-sm-6">
-            <p className="text-center lead">We will not share any personal information</p>
-            <p className="text-center lead">We will not share any personal information</p>
+            <h4 className="text-center lead">We will not share any personal information</h4>
+            <br />
+            <h4 className="text-center lead">Borrower and Guarantor info is protected</h4>
+            <br />
+            <h4 className="text-center lead">We notify you on missed payments</h4>
           </div>
         </div>
       </section>
@@ -73,16 +76,13 @@ class Sections extends Component {
       <section className="container" id="section7">
       	<h1 className="text-center">We're on social media</h1>
           <div className="row">
-            <div className="col-sm-3 col-xs-4 text-center">
+            <div className="col-sm-4 col-xs-4 text-center">
              	<i className="fa fa-facebook fa-4x"></i>
             </div>
-            <div className="col-sm-3 col-xs-4 text-center">
-             <i className="fa fa-google-plus fa-4x"></i>
-            </div>
-            <div className="col-sm-3 col-xs-4 text-center">
+            <div className="col-sm-4 col-xs-4 text-center">
              <i className="fa fa-twitter fa-4x"></i>
             </div>
-            <div className="col-sm-3 col-xs-4 text-center">
+            <div className="col-sm-4 col-xs-4 text-center">
              <i className="fa fa-instagram fa-4x"></i>
             </div>
             <br />
@@ -93,7 +93,7 @@ class Sections extends Component {
         	<div className="col-md-12 text-center">
             <h2 className="text-center">Contact Us</h2>
                   <div className="row">
-                    <div className="col-xs-6 col-sm-6 col-md-4 column">
+                    <div className="col-xs-6 col-sm-6 col-md-6 column">
                         <h4>Information</h4>
                         <ul className="nav">
                           <li><Link to="#">About us</Link></li>
@@ -101,14 +101,8 @@ class Sections extends Component {
                           <li><Link to="#">Benefits</Link></li>
                         </ul>
                       </div>
-                    <div className="col-xs-6 col-md-4 column">
-                        <h4>Follow Us</h4>
-                        <ul className="nav">
-                          <li><Link to="#">Twitter</Link></li>
-                          <li><Link to="#">Facebook</Link></li>
-                        </ul>
-                    </div>
-                    <div className="col-xs-6 col-md-4 column">
+
+                    <div className="col-xs-6 col-md-6 column">
                         <h4>Contact Us</h4>
                         <ul className="nav">
                           <li><Link to="#">Email</Link></li>

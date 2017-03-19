@@ -20,8 +20,8 @@ class Signup extends Component {
     {
            e.preventDefault();
 
-        return axios.post('https://shielded-inlet-71502.herokuapp.com/api/v1/users',
-        {user : {"email":"nmasheti@stakewithme.com" , "password":"nevie1024"}},
+        return axios.post('https://sheltered-eyrie-12048.herokuapp.com/api/v1/users',
+        {user : {"email":"antolisah@gmail.com" , "password":"kharioki"}},
         { headers: {"Accept": "application/json; charset=utf-8",
                     "Content-Type":"application/json; charset=utf-8"}}
                 )
